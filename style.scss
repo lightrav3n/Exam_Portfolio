@@ -247,7 +247,7 @@ article > * {
 }
 
 /* --screen size optimization-- */
-@media  (max-width: 1400px) {
+@media only screen and (max-width: 1400px) {
   .panel a {
     font-size: 2.5rem;
     left: 0;
@@ -326,7 +326,7 @@ article > * {
     animation-delay: 4.85s;
   }
 }
-@media  (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .panel a {
     font-size: 1.5rem;
     left: 0;
@@ -407,13 +407,11 @@ article > * {
   }
 }
 
-
 @media only screen and (min-width: 480px) {
   body {
     grid-template-rows: 8rem calc(100vh - 8rem);
-    
   }
- 
+
   article {
     flex: 1;
   }
