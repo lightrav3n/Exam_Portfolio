@@ -1,6 +1,4 @@
-
 @forward "./sass/reset";
-
 
 nav {
   background-color: var(--white);
@@ -14,7 +12,7 @@ nav {
 }
 nav ul {
   display: flex;
-flex-flow:column nowrap;
+  flex-flow: column nowrap;
 }
 nav a {
   transition: color var(--short-duration) ease-in;
@@ -30,14 +28,12 @@ a:hover {
   color: var(--black);
   overflow: hidden;
   padding: var(--default-padding);
-  
 }
-.cta:hover, .cta:focus {
+.cta:hover,
+.cta:focus {
   border-color: var(--yellow);
   color: var(--yellow);
-  
 }
-
 
 body {
   display: grid;
@@ -87,7 +83,6 @@ section img {
   font-size: 3rem;
   color: var(--yellow);
   list-style-type: none;
-
 }
 
 section {
@@ -125,7 +120,7 @@ article > * {
   border: solid 2px var(--white);
 }
 .panel a {
-  font-size: 4rem;
+  font-size: 5rem;
   left: 0;
   margin: 0 auto;
   position: absolute;
@@ -252,12 +247,23 @@ article > * {
 }
 
 /* --screen size optimization-- */
+@media  (max-width: 1400px) {
+  .panel a {
+    font-size: 2.5rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
 
 @media only screen and (min-width: 480px) {
   body {
     grid-template-rows: 8rem calc(100vh - 8rem);
   }
-
+ 
   article {
     flex: 1;
   }
@@ -268,7 +274,7 @@ article > * {
 
   span {
     text-align: center;
-  } 
+  }
 
   .panel:nth-of-type(1) span {
     animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
