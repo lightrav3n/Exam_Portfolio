@@ -1,7 +1,7 @@
 header a {
   color: var(--black);
   cursor: pointer;
-  font-size: var( --default-heading-size);
+  font-size: var(--default-heading-size);
   text-decoration: none;
   list-style-type: none;
   transition: color var(--short-duration) ease-in;
@@ -10,30 +10,27 @@ header a {
 header {
   position: relative;
   display: grid;
-  grid-template-columns:0.5fr 4fr 1.2fr;
+  grid-template-columns: 0.5fr 4fr 1.2fr;
   background-color: var(--white);
   padding: var(--default-padding);
   align-items: space-between;
   justify-content: center;
 }
-.homeicon{
-  
+.homeicon {
   align-items: center;
   justify-self: center;
- 
 }
 
 .homeicon:hover {
   transform: scale(1.1);
   color: var(--yellow);
- }
+}
 
 .header-elements {
   display: flex;
   width: 100%;
   padding: 0;
   margin: 0;
-
 }
 
 li:hover a {
@@ -48,7 +45,6 @@ main {
   color: var(--black);
   padding: var(--default-padding);
   animation: appear 2s forwards;
-  
 }
 
 .link {
@@ -61,11 +57,16 @@ main {
 .cta:focus {
   font-size: var(--default-font-size);
   color: var(--yellow);
- 
 }
-
+.header {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .menu {
   font-weight: 600;
+  margin-left: auto;
 }
 
 li {
@@ -82,7 +83,6 @@ li {
 }
 
 // ------- media --------
-
 
 .header {
   position: relative;
@@ -134,7 +134,7 @@ li {
   position: absolute;
   top: 100%;
   right: 0;
-  
+
   z-index: 100;
 }
 
@@ -175,11 +175,10 @@ li {
     left: 0;
     padding: 0;
   }
-header {
-  display: grid;
-  grid-template-columns:0.3fr 1fr 1fr;
-  
-}
+  header {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+  }
   #menu ul li {
     margin-bottom: 0px;
     font-size: 2em;
@@ -202,7 +201,6 @@ header {
     padding: 0;
     margin: 0;
   }
-  
 }
 
 @media (min-width: 768px) {
