@@ -63,21 +63,18 @@ p {
 }
 
 .carousel-caption {
-background-color: rgba(214, 214, 214, 0.8);
-color: black;
-width: 12vw;
-height: fit-content;
-position: absolute;
-top: 5rem;
-left: 2rem;
-z-index: 100;
-
-
-} 
+  background-color: rgba(214, 214, 214, 0.8);
+  color: black;
+  width: 12vw;
+  height: fit-content;
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  z-index: 100;
+}
 
 .carousel-caption p {
   font-size: var(--p-clamp);
- 
 }
 .carousel-caption h5 {
   font-size: var(--h2-clamp);
@@ -92,10 +89,10 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .text p, {
+  .text p {
     font-size: 1rem;
   }
   .text h2 {
     font-size: 1.5rem;
-}
+  }
 }
