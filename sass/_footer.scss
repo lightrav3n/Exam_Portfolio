@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px black solid;
+  background-color: var(--gray);
+}
+
+footer li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}

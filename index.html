@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>David Alex - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.artstation.com/davidalex" class="link"> My Artstation </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/alexdavidr" class="link"> My Linkdin </a>
+        </li>
+      </ul>
+      <ul>
+        <li class="name">David Alex</li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" class="cta"> Contact me </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <section>
+      <article class="hero">
+        <ul class="panels">
+          <li class="panel">
+            <a href="./set_design.html">
+              <span> Set Design </span>
+            </a>
+            <img
+              src="./Assets/images/Scenography/Servier/Servier1.jpg"
+              alt="Set Design"
+            />
+          </li>
+          <li class="panel">
+            <a href="./product_design.html">
+              <span> Product Design </span>
+            </a>
+            <img
+              src="./Assets/images/Product Design/Green Pepper/1.jpg"
+              alt="Product Design"
+            />
+          </li>
+          <li class="panel">
+            <a href="./Painting.html">
+              <span> Digital Painting </span>
+            </a>
+            <img src="./Assets/images/Digital Painting/3.jpg" alt="Paintings" />
+          </li>
+          <li class="panel">
+            <a href="./persona_concept.html">
+              <span> Persona Concept </span>
+            </a>
+            <img
+              src="./Assets/images/Character Design/1.jpg"
+              alt="Persona Concepts"
+            />
+          </li>
+          <li class="panel">
+            <a href="./characters.html">
+              <span> Characters </span>
+            </a>
+            <img
+              src="./Assets/images/Character Design/0.jpg"
+              alt="Characters"
+            />
+          </li>
+          <li class="panel">
+            <a href="./sitmt.html">
+              <span> SITMT </span>
+            </a>
+            <img
+              src="./Assets/images/SITMT/ALEX_David_246D_Page_11.jpg"
+              alt="SITMT"
+            />
+          </li>
+        </ul>
+        <h1>
+          <span class="gradient-text letter">p</span>
+          <span class="gradient-text letter">o</span>
+          <span class="gradient-text letter">r</span>
+          <span class="gradient-text letter">t</span>
+          <span class="gradient-text letter">f</span>
+          <span class="gradient-text letter">o</span>
+          <span class="gradient-text letter">l</span>
+          <span class="gradient-text letter">i</span>
+          <span class="gradient-text letter">o</span>
+        </h1>
+      </article>
+    </section>
+
+   
+
+    <script>
+      const links = document.querySelectorAll("a");
+      const sectionsToFade = document.querySelectorAll(
+        "section:not(:first-child)"
+      );
+      const header = document.querySelector("nav");
+      const name = document.querySelector(".name "); // Select the .name element
+
+      links.forEach((link) => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent the default link behavior
+
+          sectionsToFade.forEach((section) => {
+            section.classList.add("fade-to-black");
+          });
+          header.style.opacity = "0"; // Fading the header
+
+          // Apply the fade-out-name animation to the .name element
+          name.style.animation = "fade-out-name 1.5s forwards 1s";
+
+          // Delay the navigation after 1000ms (1 second)
+          setTimeout(() => {
+            window.location.href = link.href;
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>

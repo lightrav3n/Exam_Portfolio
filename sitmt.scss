@@ -1,0 +1,13 @@
+@forward "./sass/header";
+@forward "./sass/reset";
+@forward "./sass/main";
+@forward "./sass/footer";
+ol,
+ul,
+header {
+  padding: var(--default-padding);
+}
+
+#menu li:nth-of-type(6) a {
+  text-decoration: underline;
+}
