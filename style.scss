@@ -259,6 +259,72 @@ article > * {
   h1 {
     margin: 0 auto;
   }
+  .panel:nth-of-type(1) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(2) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(3) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(4) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .panel:nth-of-type(5) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(6) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .panel:nth-of-type(1) {
+    animation-delay: 2.6s;
+  }
+  .panel:nth-of-type(1) span {
+    animation-delay: 3.1s;
+  }
+
+  .panel:nth-of-type(2) {
+    animation-delay: 2.95s;
+  }
+  .panel:nth-of-type(2) span {
+    animation-delay: 3.45s;
+  }
+
+  .panel:nth-of-type(3) {
+    animation-delay: 3.2s;
+  }
+  .panel:nth-of-type(3) span {
+    animation-delay: 3.8s;
+  }
+
+  .panel:nth-of-type(4) {
+    animation-delay: 3.55s;
+  }
+  .panel:nth-of-type(4) span {
+    animation-delay: 4.15s;
+  }
+
+  .panel:nth-of-type(5) {
+    animation-delay: 3.9s;
+  }
+  .panel:nth-of-type(5) span {
+    animation-delay: 4.5s;
+  }
+  .panel:nth-of-type(6) {
+    animation-delay: 4.25s;
+  }
+  .panel:nth-of-type(6) span {
+    animation-delay: 4.85s;
+  }
 }
 @media  (max-width: 600px) {
   .panel a {
@@ -272,6 +338,72 @@ article > * {
   h1 {
     bottom: 0;
     margin: 0 auto;
+  }
+  .panel:nth-of-type(1) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(2) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(3) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(4) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .panel:nth-of-type(5) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+  .panel:nth-of-type(6) span {
+    animation: slide-in-top var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      forwards;
+  }
+
+  .panel:nth-of-type(1) {
+    animation-delay: 2.6s;
+  }
+  .panel:nth-of-type(1) span {
+    animation-delay: 3.1s;
+  }
+
+  .panel:nth-of-type(2) {
+    animation-delay: 2.95s;
+  }
+  .panel:nth-of-type(2) span {
+    animation-delay: 3.45s;
+  }
+
+  .panel:nth-of-type(3) {
+    animation-delay: 3.2s;
+  }
+  .panel:nth-of-type(3) span {
+    animation-delay: 3.8s;
+  }
+
+  .panel:nth-of-type(4) {
+    animation-delay: 3.55s;
+  }
+  .panel:nth-of-type(4) span {
+    animation-delay: 4.15s;
+  }
+
+  .panel:nth-of-type(5) {
+    animation-delay: 3.9s;
+  }
+  .panel:nth-of-type(5) span {
+    animation-delay: 4.5s;
+  }
+  .panel:nth-of-type(6) {
+    animation-delay: 4.25s;
+  }
+  .panel:nth-of-type(6) span {
+    animation-delay: 4.85s;
   }
 }
 
