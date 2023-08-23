@@ -106,7 +106,7 @@ article > * {
 
 .panels {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   z-index: var(--z-20);
 }
 
@@ -257,11 +257,22 @@ article > * {
     top: 0;
   }
 }
+@media  (max-width: 500px) {
+  .panel a {
+    font-size: 1.5rem;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
 
 
 @media only screen and (min-width: 480px) {
   body {
     grid-template-rows: 8rem calc(100vh - 8rem);
+    
   }
  
   article {
