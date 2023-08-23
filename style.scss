@@ -256,6 +256,9 @@ article > * {
     right: 0;
     top: 0;
   }
+  h1 {
+    margin: 0 auto;
+  }
 }
 @media  (max-width: 600px) {
   .panel a {
@@ -265,6 +268,9 @@ article > * {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  h1 {
+    margin: 0 auto;
   }
 }
 
