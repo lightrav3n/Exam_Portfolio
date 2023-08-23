@@ -660,3 +660,13 @@ html {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 768px) {
+
+  .link {
+    font-size: 1rem;
+  }
+  .cta {
+    font-size: 1rem;
+  }
+}
