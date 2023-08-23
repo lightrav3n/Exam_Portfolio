@@ -252,7 +252,7 @@ article > * {
 
 /* --screen size optimization-- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
   body {
     grid-template-rows: 8rem calc(100vh - 8rem);
   }
