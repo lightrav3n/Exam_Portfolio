@@ -1,0 +1,40 @@
+@forward "./sass/header";
+@forward "./sass/reset";
+@forward "./sass/main";
+@forward "./sass/footer";
+
+ol,
+ul,
+header {
+  padding: var(--default-padding);
+}
+main {
+    display: flex;
+    padding:5% 15% 20%;
+}
+.mb-4{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-self: center;
+}
+
+.row {
+  width: inherit;
+  font-size: var(--default-font-size);
+}
+.btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    font-size: var(--default-font-size);
+    border-color: black;
+}
+.btn:hover {
+    background-color: var(--yellow);
+}
+
+.form-control {
+    padding:1rem;
+} 
