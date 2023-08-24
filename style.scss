@@ -689,3 +689,44 @@ nav p {
   font-size: 1.5rem;
   color: var(--yellow);
 }
+
+
+// ------ @media ------
+
+/* Add this to your CSS code */
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-flow: row nowrap;
+    margin-top: 1rem;
+  }
+  nav li {
+    margin-right: 1rem;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  nav p {
+    font-size: 1rem;
+  }
+}
+
+/* Add this to your CSS code */
+@media only screen and (max-width: 600px) {
+  .panels {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+/* Add this to your CSS code */
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 2rem;
+  }
+  nav {
+    padding: 1rem;
+  }
+}
