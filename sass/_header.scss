@@ -171,13 +171,13 @@ li {
 
   #menu {
     width: 100%;
-    top: 100%;
+    // top: 100%;
     left: 0;
     padding: 0;
   }
   header {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-columns: 0.3fr 1.5fr 1fr;
   }
   #menu ul li {
     margin-bottom: 0px;

@@ -3,17 +3,17 @@ img {
   max-width: 100%;
 }
 
-.hero-section {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  height: 20vh;
-  width: 100vw;
-  margin: 0;
+// .hero-section {
+//   display: flex;
+//   flex-flow: column;
+//   align-items: center;
+//   justify-content: center;
+//   height: 20vh;
+//   width: 100vw;
+//   margin: 0;
 
-  border: 2px red solid;
-}
+//   border: 2px red solid;
+// }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
@@ -89,10 +89,9 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .text p {
-    font-size: 1rem;
+  .container {
+    display: flex;
+    flex-flow: column wrap;
   }
-  .text h2 {
-    font-size: 1.5rem;
-  }
+ 
 }

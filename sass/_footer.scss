@@ -12,12 +12,25 @@ footer li {
   list-style-type: none;
   color: rgb(0, 0, 0);
 }
-
+.right {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+}
 footer img {
   height: auto;
-  width: 15vw !important;
+  width: 10vw !important;
+ 
 }
 @media screen and (max-width: 768px) {
+ .foot {
+  display:flex;
+  flex-flow: wrap; 
+  
+ }
+ 
+ 
   footer li a {
     font-size: 1rem;
   }
@@ -26,9 +39,18 @@ footer img {
     font-size: 1rem;
   }
   .link {
+    
     font-size: 1rem;
   }
   .cta {
     font-size: 1rem;
+  }
+  .cta:hover {
+    font-size: 1rem;
+  }
+  footer img {
+    height: auto;
+    width: 70vw !important;
+   
   }
 }
