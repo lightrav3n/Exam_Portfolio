@@ -69,7 +69,7 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="content">
       <section class="mb-4">
         <h2 class="h1-responsive font-weight-bold text-center my-4">
           Contact me
@@ -157,25 +157,6 @@
     </main>
     <footer class="foot">
       <ul>
-        <li><img src="./Assets/icons/logo.png" width="80" alt="logo" /></li>
-      </ul>
-      <ul>
-        <ul>
-          <li><b>© David Alex 2023</b></li>
-          <li>All rights reserved</li>
-        </ul>
-      </ul>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./set_design.html">Set Design</a></li>
-        <li><a href="./product_design.html">Product Design</a></li>
-        <li><a href="./painting.html">Digital Painting</a></li>
-        <li><a href="./persona_concept.html">Persona Concept</a></li>
-        <li><a href="./characters.html">Characters</a></li>
-        <li><a href="./sitmt.html">Mountain Shelter</a></li>
-        <li><a href="./webdev.html">Web Development</a></li>
-      </ul>
-      <ul>
         <li>
           <a href="https://www.artstation.com/davidalex" class="link">
             <i class="fa-brands fa-artstation"></i> Artstation
@@ -192,6 +173,40 @@
           </a>
         </li>
       </ul>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./set_design.html">Set Design</a></li>
+        <li><a href="./product_design.html">Product Design</a></li>
+        <li><a href="./painting.html">Digital Painting</a></li>
+        <li><a href="./persona_concept.html">Persona Concept</a></li>
+        <li><a href="./characters.html">Characters</a></li>
+        <li><a href="./sitmt.html">Mountain Shelter</a></li>
+        <li><a href="./webdev.html">Web Development</a></li>
+      </ul>
+
+      <div class="right">
+        <ul>
+          <ul>
+            <li><b>© David Alex 2023</b></li>
+            <li>All rights reserved</li>
+          </ul>
+        </ul>
+        <ul>
+          <li><img src="./Assets/icons/logo.png" alt="logo" /></li>
+        </ul>
+      </div>
     </footer>
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const content = document.querySelector(".content"); // Select the content container
+
+      menuToggle.addEventListener("change", () => {
+        if (menuToggle.checked) {
+          content.classList.add("menu-expanded"); // Add class to adjust margin
+        } else {
+          content.classList.remove("menu-expanded"); // Remove class to reset margin
+        }
+      });
+    </script>
   </body>
 </html>

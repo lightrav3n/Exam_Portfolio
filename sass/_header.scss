@@ -201,6 +201,17 @@ li {
     padding: 0;
     margin: 0;
   }
+  
+  .content {
+    margin-top: 0; /* Reset margin for small screens */
+    transition: margin-top 0.3s ease;
+  }
+
+  #menu-toggle:checked ~ .content {
+    margin-top: 200px; /* Adjust this value based on your menu's expanded height */
+  }
+
+
 }
 
 @media (min-width: 768px) {
@@ -242,4 +253,15 @@ li {
   #menu ul li a {
     padding: 0;
   }
+}
+
+
+.content {
+  margin-top: 0; /* Initial margin */
+  transition: margin-top 0.3s ease;
+}
+
+
+.menu-expanded {
+  margin-top: 400px; /* Adjust this value to match the expanded menu height */
 }
