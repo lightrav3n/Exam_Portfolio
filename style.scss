@@ -1,5 +1,6 @@
 @forward "./sass/reset";
 
+
 nav {
   background-color: var(--white);
   display: flex;
@@ -85,6 +86,8 @@ section img {
   color: var(--yellow);
   list-style-type: none;
 }
+
+
 
 section {
   display: flex;
